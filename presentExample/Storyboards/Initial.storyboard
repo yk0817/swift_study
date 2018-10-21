@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WYh-4g-nvo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="kV1-uG-SWG">
+            <objects>
+                <viewController id="WYh-4g-nvo" customClass="InitialViewController" customModule="presentExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oxx-Mu-evZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfJ-PE-zU2">
+                                <rect key="frame" x="100" y="300" width="175" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="次のページ">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTouchNextButton:" destination="WYh-4g-nvo" eventType="touchUpInside" id="u1q-28-Kcp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SfJ-PE-zU2" firstAttribute="leading" secondItem="85I-g7-J2Z" secondAttribute="leading" constant="100" id="8O4-zw-Lky"/>
+                            <constraint firstItem="SfJ-PE-zU2" firstAttribute="leading" secondItem="85I-g7-J2Z" secondAttribute="leading" constant="100" id="CQI-Co-Q2h"/>
+                            <constraint firstItem="SfJ-PE-zU2" firstAttribute="top" secondItem="85I-g7-J2Z" secondAttribute="top" constant="280" id="Fwq-Md-3CU"/>
+                            <constraint firstItem="SfJ-PE-zU2" firstAttribute="top" secondItem="85I-g7-J2Z" secondAttribute="top" constant="280" id="Xh8-Qb-xVa"/>
+                            <constraint firstItem="85I-g7-J2Z" firstAttribute="trailing" secondItem="SfJ-PE-zU2" secondAttribute="trailing" constant="100" id="Xso-sX-CSF"/>
+                            <constraint firstItem="SfJ-PE-zU2" firstAttribute="leading" secondItem="85I-g7-J2Z" secondAttribute="leading" constant="30" id="Xyc-xn-SjE"/>
+                            <constraint firstItem="SfJ-PE-zU2" firstAttribute="top" secondItem="85I-g7-J2Z" secondAttribute="top" constant="280" id="dNM-il-uzq"/>
+                            <constraint firstItem="85I-g7-J2Z" firstAttribute="trailing" secondItem="SfJ-PE-zU2" secondAttribute="trailing" constant="100" id="dmD-u1-00T"/>
+                            <constraint firstItem="85I-g7-J2Z" firstAttribute="trailing" secondItem="SfJ-PE-zU2" secondAttribute="trailing" constant="100" id="ldB-b4-76B"/>
+                            <constraint firstItem="SfJ-PE-zU2" firstAttribute="leading" secondItem="85I-g7-J2Z" secondAttribute="leading" constant="100" id="sMg-of-qN1"/>
+                            <constraint firstItem="85I-g7-J2Z" firstAttribute="trailing" secondItem="SfJ-PE-zU2" secondAttribute="trailing" constant="30" id="z3E-TU-DPT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="85I-g7-J2Z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJd-zH-YvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158" y="-48"/>
+        </scene>
+    </scenes>
+</document>
